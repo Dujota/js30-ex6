@@ -23,8 +23,8 @@
     const cities = [];
 
     fetch(endpoint)
-      .then(blob => blob.json())
-      .then(data => console.log(data));
+      .then(response => response.json())
+      .then(data => cities.push(...data));
   </script>
 </body>
 
